@@ -1,5 +1,3 @@
-// app/components/TanStackProvider/TanStackProvider.tsx
-
 "use client";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -9,7 +7,7 @@ interface TanstackProviderProps {
   children: React.ReactNode;
 }
 
-function TanstackProvider({ children }: TanstackProviderProps) {
+function TanStackProvider({ children }: TanstackProviderProps) {
   const [queryClient] = useState(() => new QueryClient());
 
   return (
@@ -17,4 +15,4 @@ function TanstackProvider({ children }: TanstackProviderProps) {
   );
 }
 
-export default TanstackProvider;
+export default TanStackProvider;
